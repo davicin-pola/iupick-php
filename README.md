@@ -130,19 +130,3 @@ $addInformation = Iupick\Shipment::addInformation([
 ]);
 
 ```
-
-### Step 3.
-
-Generate your waybill with your confirmation token.
-
-``` php
-$waybill = Iupick\Shipment::generateWaybill($shipmentToken);
-```
-
-### Tracking your shipment
-
-In order to track a shipment send the carrier and the tracking number.
-
-``` php
-$track = Iupick\Shipment::track('Estafeta', '8055241528464720099314');
-```
